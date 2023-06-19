@@ -1,75 +1,111 @@
-@media(max-width: 375px){
-    main{
-        display: flex;
-        flex-direction: column;
-    }
-
-    header{
-        font-family: 'Open Sans', sans-serif;
-        position: absolute;
+@media(min-width:769px) and (max-width: 1024px) {
+    body {
+        padding: 20px;
     }
 
     .container {
-        display: flex;
-        /* position: relative; */
+        max-width: 100%;
+        margin-top:0px ;
     }
 
-    .container .ilustracao {
-        display: flex;
-        padding: 60px 0px 0px 31px;
+    .container .info {
+        padding-top: 10px;
     }
 
-    .ilustracao img {
-        width: 310px; 
-        height: auto;
-        margin-top: 60px;
+    .container .info h2 {
+        font-size: 25px;
+        line-height: 40px;
+    }
+}
+/* MEDIA QUERY ATE 768 */
+@media (min-width:426px) and (max-width:768px) {
+    
+    .header .logo {
+        height: 40px;
+    }
+    .container{
+        flex-wrap: wrap;
+        max-width: 100%;
+        justify-content: center;
+        gap: 30px;
     }
 
-    .secao-principal {
-        max-width: 375px;
-        padding: 60px 16px 0px 16px;
-        /* position: relative; */
-    }
-
-    .título {
-        font-size: 2.5rem;
-        margin-left: 5px;
+    .container .info {
         text-align: center;
+        max-width: 100%;
+        padding-top: 20px;
     }
 
-    .descricao {
-        font-size: 1.45rem;
-        padding: 28px;
-        margin-left: -10px;
-        margin-top: -10px;
-        text-align: center;
+    .footer {
+        height: 70px;
+        margin: 20px auto;
     }
-
-    .btn {
-        padding: 12px 70px; 
-        font-size: 12px; 
-        margin-top: 12px;
-        margin-left: 75px;
-        /* position: relative; */
-    }
-
-    .footer{
-        position: absolute;
-        margin-left: 118px;
+}
+/* MEDIA QUERY ATE 425 */
+@media (max-width:425px) {
+    
+    body {
+        background:var(--background) url(../images/bg-mobile.svg) no-repeat ;
+        padding: 20px;
     }
     
-    .footer-social a{
-        display: inline-block;
-        margin: 7px;
-        margin-top: 88px;
-        text-align: center;
-        font-size: 16px;
-        color: #ffffff;
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        border: 2px solid #ffffff;
-    }
+    .logo{
+        width: 50%;
+        margin-left: 20px;
+   }
+
+    .container {
+    width: 100%;
+    flex-direction: column;   
+    padding: 0 20px;
+    margin: 0;
+   }
+
+   .container img {
+    max-width: 100%;
+    padding-top: 20px;
+   }
+
+   .container .info {    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 0px;
+   }
+
+   .container .info h2{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 25px;
+    line-height: 40px;
+   }
+
+   .container .info p {
+    font-size: 16px;
+    line-height: 25px;
+   }
+
+   .container .info .btn {
+    padding: 10px 70px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    font-size: 15px;
+   }
+
+   .footer {
+    margin: 40px auto;
+    height: 80px;
+   }
+
+   .footer .footer-social {
+    justify-content: center;    
+   }
+
+   .footer .footer-social a {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+   }    
 }
 
 
